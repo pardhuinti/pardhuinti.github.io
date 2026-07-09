@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Pardhiv Chandra Shekar Sairam Inti | Aspiring Software Engineer</title>
+    <meta name="title" content="Pardhiv Chandra Shekar Sairam Inti | Aspiring Software Engineer">
+    <meta name="description" content="Personal portfolio of Pardhiv Chandra Shekar Sairam Inti, a Computer Science student at Sri Vasavi Engineering College (JNTUK) and aspiring Software Engineer. Explorer of App Development and Web Technologies.">
+    <meta name="keywords" content="Pardhiv Chandra Shekar Sairam Inti, Pardhu Inti, Software Engineer, Portfolio, Computer Science Student, App Development, Sri Vasavi Engineering College, JNTUK, Java, Python, HTML5, CSS3, SQL">
+    <meta name="author" content="Pardhiv Chandra Shekar Sairam Inti">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/pardhuinti">
+    <meta property="og:title" content="Pardhiv Chandra Shekar Sairam Inti | Aspiring Software Engineer">
+    <meta property="og:description" content="Personal portfolio of Pardhiv Chandra Shekar Sairam Inti, a Computer Science student at Sri Vasavi Engineering College (JNTUK) and aspiring Software Engineer.">
+    <meta property="og:image" content="assets/profile.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Pardhiv Chandra Shekar Sairam Inti | Aspiring Software Engineer">
+    <meta property="twitter:description" content="Personal portfolio of Pardhiv Chandra Shekar Sairam Inti, a Computer Science student at Sri Vasavi Engineering College (JNTUK) and aspiring Software Engineer.">
+    <meta property="twitter:image" content="assets/profile.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@200;300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">PCS</div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Particle Background Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor-outline" id="custom-cursor-outline"></div>
+    <div class="custom-cursor-dot" id="custom-cursor-dot"></div>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="navbar-container">
+        <div class="navbar-wrapper">
+            <a href="#home" class="nav-logo" id="nav-logo">
+                <span>P</span>CS
+            </a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-nav-toggle" aria-label="Toggle Navigation Menu" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="primary-navigation" id="primary-navigation">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li class="nav-item"><a href="assets/resume.pdf" class="nav-link nav-btn" download="Pardhiv_Chandra_Shekar_Sairam_Inti_Resume.pdf"><i class="fa-solid fa-download"></i> Resume</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-glow"></div>
+            <!-- Floating Glass Background Elements -->
+            <div class="floating-element float-1" aria-hidden="true"><i class="fa-brands fa-java"></i></div>
+            <div class="floating-element float-2" aria-hidden="true"><i class="fa-brands fa-python"></i></div>
+            <div class="floating-element float-3" aria-hidden="true"><i class="fa-brands fa-js"></i></div>
+            <div class="floating-element float-4" aria-hidden="true"><i class="fa-solid fa-code"></i></div>
+            
+            <div class="hero-container container">
+                <div class="hero-content reveal-on-scroll">
+                    <div class="profile-image-container">
+                        <div class="profile-image-wrapper">
+                            <img src="assets/profile.png" alt="Pardhiv Chandra Shekar Sairam Inti" class="profile-image" loading="eager">
+                        </div>
+                        <div class="profile-status">
+                            <span class="status-dot"></span>
+                            <span class="status-text">Available for Internships</span>
+                        </div>
+                    </div>
+                    
+                    <span class="hero-subtitle">Welcome to my portfolio</span>
+                    <h1 class="hero-title">Pardhiv Chandra Shekar Sairam Inti</h1>
+                    
+                    <div class="typing-container">
+                        <span class="typing-prefix">I am an </span>
+                        <span class="typing-text" id="typing-text"></span>
+                        <span class="typing-cursor">|</span>
+                    </div>
+                    
+                    <p class="hero-tagline">Learning today, building tomorrow.</p>
+                    
+                    <div class="hero-cta">
+                        <a href="assets/resume.pdf" class="btn btn-primary" download="Pardhiv_Chandra_Shekar_Sairam_Inti_Resume.pdf">
+                            <span class="btn-text">Download Resume</span>
+                            <span class="btn-icon"><i class="fa-solid fa-download"></i></span>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span class="btn-text">Contact Me</span>
+                            <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-down-indicator">
+                <a href="#about" aria-label="Scroll Down">
+                    <div class="mouse-icon">
+                        <div class="wheel"></div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tag">01 / Profile</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="about-grid grid">
+                    <div class="about-info-card glass-card tilt-card reveal-on-scroll">
+                        <div class="card-glow"></div>
+                        <i class="fa-solid fa-code-branch card-icon"></i>
+                        <h3>Aspiration</h3>
+                        <p>I am a passionate Computer Science student who loves exploring how software works under the hood. My career objective is to become a skilled Software Engineer specialized in developing high-impact applications that solve real-world problems.</p>
+                    </div>
+                    
+                    <div class="about-details reveal-on-scroll">
+                        <p class="about-desc">
+                            Hello! I'm <strong>Pardhiv Chandra Shekar Sairam Inti</strong>, a dedicated student pursuing a Bachelor of Technology in <strong>Computer Science and Technology</strong>. My academic journey at <strong>Sri Vasavi Engineering College</strong> has provided me with a solid foundation in programming, database design, and web development.
+                        </p>
+                        <p class="about-desc">
+                            Currently in my <strong>3rd Year</strong>, I am actively building my skillset in App Development and modern Software Engineering practices. I approach coding as a creative process of continuous learning and problem-solving. I am highly motivated to work on projects, gain industry exposure, and collaborate with passionate developers.
+                        </p>
+                        
+                        <div class="quick-facts-grid">
+                            <div class="fact-item">
+                                <span class="fact-label">University</span>
+                                <span class="fact-value">JNTUK Affiliated</span>
+                            </div>
+                            <div class="fact-item">
+                                <span class="fact-label">Focus Area</span>
+                                <span class="fact-value">App & Web Development</span>
+                            </div>
+                            <div class="fact-item">
+                                <span class="fact-label">Academic Status</span>
+                                <span class="fact-value">B.Tech 3rd Year</span>
+                            </div>
+                            <div class="fact-item">
+                                <span class="fact-label">Location</span>
+                                <span class="fact-value">Andhra Pradesh, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section section-padding">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tag">02 / Journey</span>
+                    <h2 class="section-title">Education</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="timeline-container">
+                    <div class="timeline-item reveal-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card glass-card tilt-card">
+                            <div class="card-glow"></div>
+                            <div class="timeline-header">
+                                <span class="timeline-period">2023 - Present</span>
+                                <span class="timeline-badge">3rd Year</span>
+                            </div>
+                            <h3 class="timeline-degree">Bachelor of Technology</h3>
+                            <h4 class="timeline-major">Computer Science and Technology</h4>
+                            <p class="timeline-institution"><i class="fa-solid fa-graduation-cap"></i> Sri Vasavi Engineering College</p>
+                            <p class="timeline-university"><i class="fa-solid fa-building-columns"></i> Affiliated with JNTUK (Jawaharlal Nehru Technological University, Kakinada)</p>
+                            <div class="timeline-details-list">
+                                <span class="detail-tag">Algorithms</span>
+                                <span class="detail-tag">Database Systems</span>
+                                <span class="detail-tag">Object-Oriented Programming</span>
+                                <span class="detail-tag">Software Development Life Cycle</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tag">03 / Expertise</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="skills-grid grid">
+                    
+                    <!-- Programming Languages -->
+                    <div class="skills-category-card glass-card tilt-card reveal-on-scroll">
+                        <div class="card-glow"></div>
+                        <div class="category-header">
+                            <i class="fa-solid fa-code category-icon"></i>
+                            <h3>Languages</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Java</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage">60%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="60%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">C (Basic)</span>
+                                    <span class="skill-percentage">50%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Web Technologies -->
+                    <div class="skills-category-card glass-card tilt-card reveal-on-scroll">
+                        <div class="card-glow"></div>
+                        <div class="category-header">
+                            <i class="fa-solid fa-laptop-code category-icon"></i>
+                            <h3>Web Technologies</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML5</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">CSS3</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="skills-category-card glass-card tilt-card reveal-on-scroll">
+                        <div class="card-glow"></div>
+                        <div class="category-header">
+                            <i class="fa-solid fa-database category-icon"></i>
+                            <h3>Databases</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SQL</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">MySQL</span>
+                                    <span class="skill-percentage">65%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skills-category-card glass-card tilt-card reveal-on-scroll">
+                        <div class="card-glow"></div>
+                        <div class="category-header">
+                            <i class="fa-solid fa-screwdriver-wrench category-icon"></i>
+                            <h3>Tools & Design</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Visual Studio Code</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Canva</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tag">04 / Creations</span>
+                    <h2 class="section-title">Projects</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="projects-wrapper reveal-on-scroll">
+                    <!-- Premium Coming Soon Container -->
+                    <div class="coming-soon-container glass-card tilt-card">
+                        <div class="card-glow"></div>
+                        <div class="coming-soon-content">
+                            <div class="gear-animation-wrapper">
+                                <div class="gear-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+                            </div>
+                            <span class="badge-coming-soon">Coming Soon</span>
+                            <h3>Engineering Creative Solutions</h3>
+                            <p class="coming-soon-desc">
+                                Currently building exciting software and web development projects. Stay tuned for future updates.
+                            </p>
+                            
+                            <!-- Placeholders representing future project cards -->
+                            <div class="project-placeholders-grid">
+                                <div class="placeholder-card">
+                                    <div class="ph-header">
+                                        <div class="ph-icon"></div>
+                                        <div class="ph-links"></div>
+                                    </div>
+                                    <div class="ph-title"></div>
+                                    <div class="ph-text"></div>
+                                    <div class="ph-tags">
+                                        <div class="ph-tag"></div>
+                                        <div class="ph-tag"></div>
+                                    </div>
+                                </div>
+                                <div class="placeholder-card">
+                                    <div class="ph-header">
+                                        <div class="ph-icon"></div>
+                                        <div class="ph-links"></div>
+                                    </div>
+                                    <div class="ph-title"></div>
+                                    <div class="ph-text"></div>
+                                    <div class="ph-tags">
+                                        <div class="ph-tag"></div>
+                                        <div class="ph-tag"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications-section section-padding">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tag">05 / Verifications</span>
+                    <h2 class="section-title">Certifications</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="certifications-grid grid">
+                    <!-- NPTEL Certificate Card -->
+                    <div class="cert-card glass-card tilt-card reveal-on-scroll">
+                        <div class="card-glow"></div>
+                        <div class="cert-icon-wrapper">
+                            <i class="fa-solid fa-award cert-icon"></i>
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-issuer">NPTEL / SWAYAM</span>
+                            <h3 class="cert-name">NPTEL Online Certification</h3>
+                            <p class="cert-desc">Successfully completed coursework and evaluations under the National Programme on Technology Enhanced Learning (NPTEL), demonstrating expertise in core Computer Science concepts.</p>
+                            <div class="cert-meta">
+                                <span class="cert-date"><i class="fa-regular fa-calendar-days"></i> Completed</span>
+                                <span class="cert-status-verified"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Placeholder Certificate Card for Future Use -->
+                    <div class="cert-card glass-card cert-placeholder-card reveal-on-scroll">
+                        <div class="cert-icon-wrapper">
+                            <i class="fa-solid fa-plus-circle cert-icon"></i>
+                        </div>
+                        <div class="cert-body">
+                            <span class="cert-issuer">Future Milestone</span>
+                            <h3 class="cert-name">Upcoming Certification</h3>
+                            <p class="cert-desc">Actively preparing for industry-recognized certifications in cloud computing, app development, and advanced programming.</p>
+                            <div class="cert-meta">
+                                <span class="cert-date"><i class="fa-regular fa-clock"></i> In Progress</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume CTA Banner Section -->
+        <section class="resume-cta-section section-padding">
+            <div class="container">
+                <div class="resume-cta-card glass-card tilt-card reveal-on-scroll">
+                    <div class="card-glow"></div>
+                    <div class="resume-cta-content">
+                        <div class="resume-icon-box"><i class="fa-regular fa-file-pdf"></i></div>
+                        <div class="resume-text-box">
+                            <h2>Curriculum Vitae</h2>
+                            <p>Get a comprehensive overview of my qualifications, academic background, and technical skillset in a compact PDF format.</p>
+                        </div>
+                        <div class="resume-btn-box">
+                            <a href="assets/resume.pdf" class="btn btn-primary" download="Pardhiv_Chandra_Shekar_Sairam_Inti_Resume.pdf">
+                                <span class="btn-text">Download Resume</span>
+                                <span class="btn-icon"><i class="fa-solid fa-arrow-down-long"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tag">06 / Connect</span>
+                    <h2 class="section-title">Get in Touch</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="contact-grid grid">
+                    
+                    <!-- Contact Details Card -->
+                    <div class="contact-info-wrapper reveal-on-scroll">
+                        <div class="contact-card glass-card tilt-card">
+                            <div class="card-glow"></div>
+                            <h3>Let's collaborate</h3>
+                            <p class="contact-intro">I'm currently looking for internship opportunities or interesting projects to collaborate on. If you have any questions or want to discuss technology, feel free to reach out!</p>
+                            
+                            <div class="contact-details">
+                                <div class="contact-detail-item">
+                                    <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                                    <div class="detail-text">
+                                        <span class="detail-title">Email</span>
+                                        <a href="mailto:pardhivinti2007@gmail.com" class="detail-value">pardhivinti2007@gmail.com</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-detail-item">
+                                    <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+                                    <div class="detail-text">
+                                        <span class="detail-title">Phone</span>
+                                        <a href="tel:+919963449181" class="detail-value">+91 9963449181</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-detail-item">
+                                    <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                    <div class="detail-text">
+                                        <span class="detail-title">Address</span>
+                                        <span class="detail-value">West Godavari, Andhra Pradesh, India</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Links Card -->
+                    <div class="socials-card-wrapper reveal-on-scroll">
+                        <div class="socials-card glass-card tilt-card">
+                            <div class="card-glow"></div>
+                            <h3>Digital Footprint</h3>
+                            <p class="socials-intro">Connect with me on professional platforms and review my open-source code repositories.</p>
+                            
+                            <div class="social-links-grid">
+                                <a href="https://www.linkedin.com/in/pardhu-inti-013b01375/" target="_blank" rel="noopener noreferrer" class="social-link-item glass-card">
+                                    <i class="fa-brands fa-linkedin-in social-icon"></i>
+                                    <span class="social-name">LinkedIn</span>
+                                    <span class="social-username">pardhu-inti-013b01375</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
+                                </a>
+                                
+                                <a href="https://github.com/pardhuinti" target="_blank" rel="noopener noreferrer" class="social-link-item glass-card">
+                                    <i class="fa-brands fa-github social-icon"></i>
+                                    <span class="social-name">GitHub</span>
+                                    <span class="social-username">pardhuinti</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <div class="footer-wrapper container">
+            <div class="footer-brand">
+                <span class="footer-logo">PCS</span>
+                <span class="footer-name">Pardhiv Chandra Shekar Sairam Inti</span>
+            </div>
+            
+            <div class="footer-social-icons">
+                <a href="https://github.com/pardhuinti" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/pardhu-inti-013b01375/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:pardhivinti2007@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            
+            <div class="footer-info">
+                <p class="copyright">&copy; <span id="copyright-year">2026</span> Pardhiv Chandra Shekar Sairam Inti. All rights reserved.</p>
+                <p class="creator">Designed & Developed with <i class="fa-solid fa-heart heart-icon"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
