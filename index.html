@@ -505,61 +505,95 @@
                 
                 <div class="contact-grid grid">
                     
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-wrapper reveal-on-scroll">
+                        <div class="contact-form-card glass-card tilt-card">
+                            <div class="card-glow"></div>
+                            <h3>Send a Message</h3>
+                            <p class="contact-intro">Have a question or want to work together? Fill out the form below and I will get back to you as soon as possible.</p>
+                            
+                            <form id="contact-form" class="contact-form" novalidate>
+                                <div class="form-group">
+                                    <label for="form-name" class="form-label">Full Name</label>
+                                    <input type="text" id="form-name" name="name" class="form-input" placeholder="Your Name" required>
+                                    <span class="form-error-msg" id="name-error">Please enter your name.</span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="form-email" class="form-label">Email Address</label>
+                                    <input type="email" id="form-email" name="email" class="form-input" placeholder="your.email@example.com" required>
+                                    <span class="form-error-msg" id="email-error">Please enter a valid email address.</span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="form-message" class="form-label">Message</label>
+                                    <textarea id="form-message" name="message" class="form-input form-textarea" placeholder="How can I help you?" rows="5" required></textarea>
+                                    <span class="form-error-msg" id="message-error">Please enter your message.</span>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary form-submit-btn">
+                                    <span class="btn-text">Send Message</span>
+                                    <span class="btn-icon"><i class="fa-solid fa-paper-plane"></i></span>
+                                </button>
+                                
+                                <div class="form-status-msg" id="form-status"></div>
+                            </form>
+                        </div>
+                    </div>
+                    
                     <!-- Contact Details Card -->
                     <div class="contact-info-wrapper reveal-on-scroll">
                         <div class="contact-card glass-card tilt-card">
                             <div class="card-glow"></div>
-                            <h3>Let's collaborate</h3>
-                            <p class="contact-intro">I'm currently looking for internship opportunities or interesting projects to collaborate on. If you have any questions or want to discuss technology, feel free to reach out!</p>
+                            <div class="contact-header-info">
+                                <h3>Pardhiv Chandra Shekar Sairam Inti</h3>
+                                <p class="contact-subtitle">Computer Science Student | Software Developer</p>
+                            </div>
                             
                             <div class="contact-details">
-                                <div class="contact-detail-item">
+                                <a href="mailto:pardhivinti2007@gmail.com" class="contact-detail-item equal-method">
                                     <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
                                     <div class="detail-text">
                                         <span class="detail-title">Email</span>
-                                        <a href="mailto:pardhivinti2007@gmail.com" class="detail-value">pardhivinti2007@gmail.com</a>
+                                        <span class="detail-value">pardhivinti2007@gmail.com</span>
                                     </div>
-                                </div>
+                                    <i class="fa-solid fa-arrow-up-right-from-square arrow-icon-contact"></i>
+                                </a>
                                 
-                                <div class="contact-detail-item">
+                                <a href="tel:+919963449181" class="contact-detail-item equal-method">
                                     <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
                                     <div class="detail-text">
                                         <span class="detail-title">Phone</span>
-                                        <a href="tel:+919963449181" class="detail-value">+91 9963449181</a>
+                                        <span class="detail-value">+91 9963449181</span>
                                     </div>
-                                </div>
-                                
-                                <div class="contact-detail-item">
-                                    <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
-                                    <div class="detail-text">
-                                        <span class="detail-title">Address</span>
-                                        <span class="detail-value">West Godavari, Andhra Pradesh, India</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Social Links Card -->
-                    <div class="socials-card-wrapper reveal-on-scroll">
-                        <div class="socials-card glass-card tilt-card">
-                            <div class="card-glow"></div>
-                            <h3>Digital Footprint</h3>
-                            <p class="socials-intro">Connect with me on professional platforms and review my open-source code repositories.</p>
-                            
-                            <div class="social-links-grid">
-                                <a href="https://www.linkedin.com/in/pardhu-inti-013b01375/" target="_blank" rel="noopener noreferrer" class="social-link-item glass-card">
-                                    <i class="fa-brands fa-linkedin-in social-icon"></i>
-                                    <span class="social-name">LinkedIn</span>
-                                    <span class="social-username">pardhu-inti-013b01375</span>
-                                    <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
+                                    <i class="fa-solid fa-arrow-up-right-from-square arrow-icon-contact"></i>
                                 </a>
                                 
-                                <a href="https://github.com/pardhuinti" target="_blank" rel="noopener noreferrer" class="social-link-item glass-card">
-                                    <i class="fa-brands fa-github social-icon"></i>
-                                    <span class="social-name">GitHub</span>
-                                    <span class="social-username">pardhuinti</span>
-                                    <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Tadepalligudem,+Andhra+Pradesh,+India" target="_blank" rel="noopener noreferrer" class="contact-detail-item equal-method">
+                                    <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                    <div class="detail-text">
+                                        <span class="detail-title">Location</span>
+                                        <span class="detail-value">Tadepalligudem, AP, India</span>
+                                    </div>
+                                    <i class="fa-solid fa-arrow-up-right-from-square arrow-icon-contact"></i>
+                                </a>
+                                
+                                <a href="https://www.linkedin.com/in/pardhuinti/" target="_blank" rel="noopener noreferrer" class="contact-detail-item equal-method">
+                                    <div class="detail-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                                    <div class="detail-text">
+                                        <span class="detail-title">LinkedIn</span>
+                                        <span class="detail-value">linkedin.com/in/pardhuinti</span>
+                                    </div>
+                                    <i class="fa-solid fa-arrow-up-right-from-square arrow-icon-contact"></i>
+                                </a>
+                                
+                                <a href="https://github.com/pardhuinti" target="_blank" rel="noopener noreferrer" class="contact-detail-item equal-method">
+                                    <div class="detail-icon"><i class="fa-brands fa-github"></i></div>
+                                    <div class="detail-text">
+                                        <span class="detail-title">GitHub</span>
+                                        <span class="detail-value">github.com/pardhuinti</span>
+                                    </div>
+                                    <i class="fa-solid fa-arrow-up-right-from-square arrow-icon-contact"></i>
                                 </a>
                             </div>
                         </div>
@@ -579,7 +613,7 @@
             
             <div class="footer-social-icons">
                 <a href="https://github.com/pardhuinti" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/pardhu-inti-013b01375/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/in/pardhuinti/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="mailto:pardhivinti2007@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
             </div>
             
