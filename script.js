@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- 4. Typing Animation System ---
     const typingText = document.getElementById('typing-text');
-    const titles = ["Aspiring Software Engineer", "App Developer", "Computer Science Student"];
+    const titles = ["Computer Science Student", "Software Developer", "App Developer"];
     let titleIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -344,7 +344,86 @@ document.addEventListener('DOMContentLoaded', () => {
         yearSpan.textContent = new Date().getFullYear();
     }
 
-    // --- 10. Preloader System ---
+    // --- 10. Contact Form System ---
+    const contactForm = document.getElementById('contact-form');
+    const formStatus = document.getElementById('form-status');
+    
+    if (contactForm) {
+        contactForm.setAttribute('novalidate', '');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const nameInput = document.getElementById('form-name');
+            const emailInput = document.getElementById('form-email');
+            const messageInput = document.getElementById('form-message');
+            
+            let isValid = true;
+            
+            // Validate Name
+            if (!nameInput.value.trim()) {
+                nameInput.classList.add('invalid');
+                isValid = false;
+            } else {
+                nameInput.classList.remove('invalid');
+            }
+            
+            // Validate Email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailInput.value.trim() || !emailRegex.test(emailInput.value)) {
+                emailInput.classList.add('invalid');
+                isValid = false;
+            } else {
+                emailInput.classList.remove('invalid');
+            }
+            
+            // Validate Message
+            if (!messageInput.value.trim()) {
+                messageInput.classList.add('invalid');
+                isValid = false;
+            } else {
+                messageInput.classList.remove('invalid');
+            }
+            
+            if (isValid) {
+                formStatus.className = 'form-status-msg';
+                formStatus.textContent = 'Sending message...';
+                
+                setTimeout(() => {
+                    formStatus.className = 'form-status-msg success';
+                    formStatus.innerHTML = '<i class="fa-solid fa-circle-check"></i> Message sent successfully!';
+                    contactForm.reset();
+                    
+                    setTimeout(() => {
+                        formStatus.textContent = '';
+                        formStatus.className = 'form-status-msg';
+                    }, 5000);
+                }, 1200);
+            } else {
+                formStatus.className = 'form-status-msg error';
+                formStatus.textContent = 'Please correct the highlighted fields.';
+            }
+        });
+        
+        // Input validation & cursor listeners
+        const formInputs = contactForm.querySelectorAll('.form-input');
+        formInputs.forEach(input => {
+            input.addEventListener('input', () => {
+                if (input.value.trim()) {
+                    input.classList.remove('invalid');
+                }
+            });
+            
+            input.addEventListener('mouseenter', () => {
+                document.body.classList.add('cursor-hover');
+            });
+            input.addEventListener('mouseleave', () => {
+                document.body.classList.remove('cursor-hover');
+            });
+        });
+    }
+
+    // --- 11. Preloader System ---
     window.addEventListener('load', () => {
         const preloader = document.getElementById('preloader');
         if (preloader) {
