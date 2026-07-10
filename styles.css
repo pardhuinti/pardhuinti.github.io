@@ -1347,26 +1347,115 @@ body.cursor-hover .custom-cursor-outline {
 }
 
 .detail-value {
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 500;
     color: var(--text-primary);
+    word-break: break-all;
 }
 
-a.detail-value:hover {
-    color: var(--text-secondary);
-    text-decoration: underline;
+/* --- Contact Form Styles --- */
+.contact-form {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-/* Social Link Cards */
-.social-links-grid {
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    position: relative;
+    width: 100%;
+}
+
+.form-label {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.form-input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-glass);
+    border-radius: 12px;
+    padding: 0.9rem 1.2rem;
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    transition: var(--transition-fast);
+    outline: none;
+}
+
+.form-input:focus {
+    border-color: rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.02);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-error-msg {
+    font-size: 0.75rem;
+    color: #ff3333;
+    display: none;
+    margin-top: 0.25rem;
+}
+
+.form-input.invalid {
+    border-color: #ff3333;
+}
+
+.form-input.invalid ~ .form-error-msg {
+    display: block;
+}
+
+.form-status-msg {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 0.5rem;
+    min-height: 20px;
+}
+
+.form-status-msg.success {
+    color: #ffffff;
+}
+
+.form-status-msg.error {
+    color: #ff3333;
+}
+
+/* Equal contact detail item additions */
+.contact-header-info {
+    margin-bottom: 2.5rem;
+    text-align: left;
+}
+
+.contact-subtitle {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-top: 0.4rem;
+    letter-spacing: 0.03em;
+}
+
+.contact-details {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
 }
 
-.social-link-item {
-    display: grid;
-    grid-template-columns: 48px 1fr auto;
+.contact-detail-item.equal-method {
+    display: flex;
     align-items: center;
     gap: 1.5rem;
     padding: 1.2rem 1.8rem;
@@ -1374,41 +1463,23 @@ a.detail-value:hover {
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid var(--border-glass);
     transition: var(--transition-smooth);
+    width: 100%;
 }
 
-.social-link-item:hover {
+a.contact-detail-item.equal-method:hover {
     transform: translateX(5px);
     border-color: rgba(255, 255, 255, 0.2);
     background: rgba(255, 255, 255, 0.04);
 }
 
-.social-link-item .social-icon {
-    font-size: 1.3rem;
-    color: var(--text-primary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.social-name {
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.social-username {
-    font-family: var(--font-mono);
+.arrow-icon-contact {
     font-size: 0.8rem;
     color: var(--text-muted);
-    justify-self: end;
-}
-
-.arrow-icon {
-    font-size: 0.8rem;
-    color: var(--text-muted);
+    margin-left: auto;
     transition: var(--transition-fast);
 }
 
-.social-link-item:hover .arrow-icon {
+a.contact-detail-item.equal-method:hover .arrow-icon-contact {
     color: var(--text-primary);
     transform: translate(2px, -2px);
 }
